@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  flask_app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploaded_images:/app/static
+    environment:
+      - FLASK_ENV=development
