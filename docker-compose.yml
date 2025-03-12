@@ -15,4 +15,5 @@ services:
 
 networks:
   ascii_custom_net:
+    name: ascii_image_network
     driver: bridge  
