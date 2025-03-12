@@ -4,3 +4,4 @@ __pycache__/
 *.pyd
 static/*.png
 .env
+my_images/*
