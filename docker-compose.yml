@@ -10,3 +10,9 @@ services:
       - ./uploaded_images:/app/static
     environment:
       - FLASK_ENV=development
+    networks:
+      - ascii_custom_net  
+
+networks:
+  ascii_custom_net:
+    driver: bridge  
