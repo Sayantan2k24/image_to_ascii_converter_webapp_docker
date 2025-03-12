@@ -7,7 +7,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./uploaded_images:/app/static
+      - /images_ascii_db:/app/static
     environment:
       - FLASK_ENV=development
     networks:
