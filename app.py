@@ -58,12 +58,12 @@ def home():
             file.save(upload_path)
             print(f"File saved: {upload_path}")
 
-            converted_filename = f"{timestamp}_ascii.txt"
+            converted_filename = f"{filename}_ascii.txt"
             converted_path = os.path.join(CONVERTED_FOLDER, converted_filename)
 
             ascii_str = image_to_ascii(upload_path, converted_path)
             print(f"ASCII Art saved at: {converted_path}")
-            
+
             print(f"Generated ASCII Preview:\n{ascii_str[:300]}")
 
             return render_template("index.html", ascii_str=ascii_str)
