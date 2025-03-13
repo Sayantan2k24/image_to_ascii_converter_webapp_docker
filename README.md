@@ -175,7 +175,8 @@ cd image_to_ascii_converter_webapp_docker
 ```sh
 docker-compose up -d
 ```
-Access the application at `http://127.0.0.1:5000/`.
+Access the application at `http://127.0.0.1:5000/`. (From inside the Docker Host)
+Access the application at `http://<IP_Docker_Host>:5000/`. (From outside the Docker Host)
 
 ## Docker Configuration
 
