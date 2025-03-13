@@ -227,6 +227,9 @@ networks:
     driver: bridge  
 ```
 
-
+### 3. Delete the Resources or SetUp
+```sh
+docker-compose down
+```
 
 
